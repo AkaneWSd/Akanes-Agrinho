@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do Campo à Cidade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #d0f0c0, #ffffff);
+      color: #333;
+    }
+    header {
+      background-color: #5a8f29;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #82b74b;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #3e6d1f;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .curiosidade, .jogo {
+      margin-bottom: 30px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .jogo img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .interativo {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .interativo button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #82b74b;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .interativo button:hover {
+      background-color: #5a8f29;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Do Campo à Cidade</h1>
+    <p>Conectando o conhecimento rural com o urbano</p>
+  </header>
+
+  <nav>
+    <a href="#curiosidades">Curiosidades</a>
+    <a href="#jogos">Jogos</a>
+    <a href="#interativo">Interativo</a>
+  </nav>
+
+  <section id="curiosidades">
+    <h2>Curiosidades</h2>
+    <div class="curiosidade">
+      <h3>Sabia que...</h3>
+      <p>A agricultura familiar é responsável por cerca de 70% dos alimentos consumidos no Brasil?</p>
+    </div>
+    <div class="curiosidade">
+      <h3>Você sabia?</h3>
+      <p>O campo e a cidade são interdependentes: a cidade consome o que o campo produz e o campo depende da cidade para vender seus produtos.</p>
+    </div>
+  </section>
+
+  <section id="jogos">
+    <h2>Jogos Educativos</h2>
+    <div class="jogo">
+      <h3>Jogo da Colheita</h3>
+      <img src="https://via.placeholder.com/600x300?text=Imagem+do+Jogo+da+Colheita" alt="Jogo da Colheita">
+      <p>Um jogo onde os alunos simulam uma plantação e aprendem sobre o ciclo das culturas.</p>
+    </div>
+    <div class="jogo">
+      <h3>Trilha do Campo</h3>
+      <img src="https://via.placeholder.com/600x300?text=Imagem+da+Trilha+do+Campo" alt="Trilha do Campo">
+      <p>Um jogo de perguntas e respostas sobre a vida rural e urbana, ideal para revisar conteúdos em sala de aula.</p>
+    </div>
+  </section>
+
+  <section id="interativo" class="interativo">
+    <h2>Ambiente Interativo Rural</h2>
+    <p>Clique no botão abaixo para ouvir os sons da fazenda!</p>
+    <button onclick="playAudio()">Ouvir sons da fazenda</button>
+    <audio id="somFazenda" src="https://www.soundjay.com/nature/farm-ambience-01.mp3"></audio>
+  </section>
+
+  <script>
+    function playAudio() {
+      const audio = document.getElementById('somFazenda');
+      audio.play();
+    }
+ <section id="curiosidades">
+  <h2>Curiosidades</h2>
+  <ul>
+    <li>Você sabia que o Brasil é um dos maiores produtores de alimentos do mundo, graças ao trabalho no campo?</li>
+    <li>Muitos produtos que usamos na cidade, como roupas e alimentos, vêm diretamente da zona rural.</li>
+    <li>O campo também contribui com energia limpa, como a biomassa e a energia solar.</li>
+    <li>Nas escolas do campo, os alunos aprendem sobre agricultura e preservação ambiental desde cedo.</li>
+    <li>O êxodo rural é um fenômeno que faz as pessoas saírem do campo para a cidade em busca de melhores condições de vida.</li>
+  </ul>
+</section>
+
+
+
+jogos:
+
+
+<section id="jogos">
+  <h2>Jogos Educativos</h2>
+  <div class="jogo">
+    <img src="imagens/jogo-colheita.png" alt="Jogo da Colheita">
+    <p><strong>Jogo da Colheita:</strong> Ensina sobre o ciclo das plantações e o tempo de colheita de cada alimento.</p>
+  </div>
+  <div class="jogo">
+    <img src="imagens/jogo-trilha-campo-cidade.png" alt="Trilha do Campo à Cidade">
+    <p><strong>Trilha do Campo à Cidade:</strong> Um jogo de percurso que mostra o caminho dos produtos até a cidade.</p>
+  </div>
+  <div class="jogo">
+    <img src="imagens/jogo-sustentavel.png" alt="Jogo da Fazenda Sustentável">
+    <p><strong>Fazenda Sustentável:</strong> Ajuda a ensinar sobre práticas ecológicas no campo, como compostagem e uso consciente da água.</p>
+  </div>
+</section>
+
+</script>
+</body>
+</html>
